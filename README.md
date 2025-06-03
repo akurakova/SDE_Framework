@@ -123,5 +123,6 @@ MIT License (or other, update as needed)
 ## 🙋‍♀️ Acknowledgements
 
 This work is part of the research paper:  
-**[Your Paper Title]**  
-Submitted to: [Conference/Journal Name], 2025
+**[A Comprehensive Evaluation Framework for Synthetic
+Medical Tabular Data Generation]**  
+Submitted to: [Journal of Biomedical Informatics], 2025
