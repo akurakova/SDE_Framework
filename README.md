@@ -116,7 +116,7 @@ Notebooks (`notebooks/*.ipynb`) provide visualization and result comparison.
 
 ## 📜 License
 
-MIT License (or other, update as needed)
+MIT License
 
 ---
 
