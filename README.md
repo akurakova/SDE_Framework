@@ -31,16 +31,17 @@ synthetic-eval/
 │
 ├── data/                    # Real and synthetic datasets
 │   ├── raw/                 # Original datasets
+│   └── synthetic/           # Synthetic datasets
 │   └── processed/           # Preprocessed data for models
 │
 ├── notebooks/               # Jupyter notebooks for analysis
-│   ├── 01_data_generation.ipynb
-│   ├── 02_preprocessing.ipynb
+│   ├── 01_preprocessing.ipynb
+│   ├── 02_data_generation.ipynb
 │   ├── 03_evaluation_quality.ipynb
 │   └── 04_evaluation_privacy_usability.ipynb
 │
 ├── src/
-│   ├── generation/          # Scripts to train each generative model
+│   ├── generators/          # Scripts to train each generative model
 │   ├── evaluation/          # Evaluation metric implementations
 │   └── utils/               # Preprocessing and helper functions
 │
