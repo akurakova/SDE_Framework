@@ -4,6 +4,7 @@ import tracemalloc
 import pandas as pd
 from pathlib import Path
 from model.ctabgan import CTABGAN
+from src.utils.postprocess import match_format
 
 class CTABGANSynthesizerWrapper:
     def __init__(self, output_dir: str = "data/synthetic/ctabgan", num_experiments: int = 1):
@@ -38,6 +39,7 @@ class CTABGANSynthesizerWrapper:
             end_time = time.time()
 
             synthetic_data = synthesizer.generate_samples()
+            synthetic_data = match_format(synthetic_data, df)
             file_path = self.output_dir / f"{dataset_name}_ctabgan_{i}.csv"
             synthetic_data.to_csv(file_path, index=False)
 

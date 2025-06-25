@@ -4,6 +4,7 @@ import tracemalloc
 from sdv.single_table import CTGANSynthesizer
 from sdv.metadata import Metadata
 from pathlib import Path
+from src.utils.postprocess import match_format
 
 class CTGANSynthesizerWrapper:
     def __init__(self, output_dir: str = "data/synthetic/ctgan"):
@@ -34,6 +35,7 @@ class CTGANSynthesizerWrapper:
         # Generate synthetic data
         print("Generating synthetic data...")
         synthetic_data = synthesizer.sample(num_rows=len(df))
+        synthetic_data = match_format(synthetic_data, df)
 
         # Save to file
         out_path = self.output_dir / f"{dataset_name}_ctgan.csv"

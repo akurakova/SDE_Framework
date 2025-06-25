@@ -4,6 +4,7 @@ import time
 import tracemalloc
 from pathlib import Path
 from be_great import GReaT
+from src.utils.postprocess import match_format
 
 class GREATSynthesizerWrapper:
     def __init__(self, output_dir: str = "data/synthetic/great"):
@@ -33,6 +34,7 @@ class GREATSynthesizerWrapper:
       #  try:
         print("Attempting guided sampling...")
         synthetic_data = model.sample(n_samples=len(df), guided_sampling=True)
+        synthetic_data = match_format(synthetic_data, df)
 
         output_file = self.output_dir / f"{dataset_name}_great.csv"
         synthetic_data.to_csv(output_file, index=False)

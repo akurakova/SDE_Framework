@@ -4,7 +4,8 @@ import tracemalloc
 from pathlib import Path
 from realtabformer import REaLTabFormer
 import io
-
+import contextlib
+from src.utils.postprocess import match_format
 
 class RTFGeneratorWrapper:
     def __init__(self, output_dir: str = "data/synthetic/rtf"):
@@ -36,6 +37,8 @@ class RTFGeneratorWrapper:
         end_time = time.time()
         current_memory, peak_memory = tracemalloc.get_traced_memory()
         tracemalloc.stop()
+
+        synthetic_data = match_format(synthetic_data, df)
 
         output_file = self.output_dir / f"{dataset_name}_rtf.csv"
         synthetic_data.to_csv(output_file, index=False)

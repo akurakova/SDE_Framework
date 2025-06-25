@@ -5,6 +5,7 @@ import tracemalloc
 from sdv.single_table import TVAESynthesizer
 from sdv.metadata import Metadata
 from pathlib import Path
+from src.utils.postprocess import match_format
 
 class TVAESynthesizerWrapper:
     def __init__(self, output_dir: str = "data/synthetic/tvae"):
@@ -35,6 +36,7 @@ class TVAESynthesizerWrapper:
         end_time = time.time()
         current_memory, peak_memory = tracemalloc.get_traced_memory()
         tracemalloc.stop()
+        synthetic_data = match_format(synthetic_data, df)
 
 
         # Save to CSV
