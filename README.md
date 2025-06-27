@@ -63,7 +63,7 @@ synthetic-eval/
 ### 1. Clone the repository
 
 ```bash
-[git clone https://github.com/YOUR_USERNAME/synthetic-eval-clean.git](https://github.com/akurakova/SDE_clean.git)
+https://github.com/akurakova/SDE_clean.git
 cd synthetic-eval-clean
 ```
 
