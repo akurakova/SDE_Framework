@@ -6,8 +6,8 @@ This repository contains code for a comprehensive evaluation of six synthetic da
 
 ##  Generative Models Evaluated
 
-- **TVAE** (Tabular Variational Autoencoder)
-- **CTGAN** (Conditional Tabular GAN)
+- **TVAE** 
+- **CTGAN** 
 - **CTABGAN**
 - **GREAT**
 - **RTF**
