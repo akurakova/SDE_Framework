@@ -63,7 +63,7 @@ synthetic-eval/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/synthetic-eval-clean.git
+[git clone https://github.com/YOUR_USERNAME/synthetic-eval-clean.git](https://github.com/akurakova/SDE_clean.git)
 cd synthetic-eval-clean
 ```
 
@@ -88,23 +88,20 @@ pip install -r requirements.txt
 
 Each part of the pipeline is modularized:
 
-### Data Generation
+### Preprocessing:
+01_preprocessing.ipynb
 
-```bash
-python src/generation/run_ctgan.py
-python src/generation/run_tvae.py
-# ... other models
-```
+### Data Generation + Computational Complexity
+02_generate_synthetic.ipynb
 
-### Evaluation
+### Quality 
+03_quality_evaluation
 
-```bash
-python src/evaluation/quality.py
-python src/evaluation/privacy.py
-python src/evaluation/usability.py
-```
+### Privacy
+04_privacy_MIA.ipynb
 
-Notebooks (`notebooks/*.ipynb`) provide visualization and result comparison.
+### Usability
+05_TSTR_evaluation.py
 
 ---
 
