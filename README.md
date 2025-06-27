@@ -4,7 +4,7 @@ This repository contains code for a comprehensive evaluation of six synthetic da
 
 ---
 
-## 📌 Generative Models Evaluated
+##  Generative Models Evaluated
 
 - **TVAE** (Tabular Variational Autoencoder)
 - **CTGAN** (Conditional Tabular GAN)
@@ -15,7 +15,7 @@ This repository contains code for a comprehensive evaluation of six synthetic da
 
 ---
 
-## 📊 Evaluation Criteria
+##  Evaluation Criteria
 
 - **Quality**: Statistical similarity to real data
 - **Privacy**: Risk of identity disclosure or memorization
@@ -24,7 +24,7 @@ This repository contains code for a comprehensive evaluation of six synthetic da
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 synthetic-eval/
@@ -58,7 +58,7 @@ synthetic-eval/
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Running the Experiments
+##  Running the Experiments
 
 Each part of the pipeline is modularized:
 
@@ -105,15 +105,15 @@ Each part of the pipeline is modularized:
 
 ---
 
-## 🧪 Reproducibility Notes
+##  Reproducibility Notes
 
 - Random seeds are set where applicable
 - All preprocessing is standardized via `src/utils/preprocessing.py`
-- Memory profiling is integrated in `complexity.py` using `memory_profiler`
+- Memory profiling is integrated in `02_data_generation.ipynb` using `memory_profiler`
 
 ---
 
-## 📜 License
+##  License
 
 MIT License
 
