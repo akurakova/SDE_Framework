@@ -38,7 +38,8 @@ synthetic-eval/
 │   ├── 01_preprocessing.ipynb
 │   ├── 02_data_generation.ipynb
 │   ├── 03_evaluation_quality.ipynb
-│   └── 04_evaluation_privacy_usability.ipynb
+│   ├── 04_evaluation_privacy_MIA.ipynb (Includes duplicates evaluation)
+│   └── 05_TSTR_evaluation.ipynb
 │
 ├── src/
 │   ├── generators/          # Scripts to train each generative model
