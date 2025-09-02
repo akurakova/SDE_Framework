@@ -11,7 +11,7 @@ This repository contains code for a comprehensive evaluation of six synthetic da
 - **CTABGAN**
 - **GREAT**
 - **RTF**
-- **TABDDPM**
+- **TABDDPM** (Implemented in a separate environment because it depends on an older Python version that is incompatible with the setup used for the other models)
 
 ---
 
@@ -38,8 +38,9 @@ synthetic-eval/
 │   ├── 01_preprocessing.ipynb
 │   ├── 02_data_generation.ipynb
 │   ├── 03_evaluation_quality.ipynb
-│   ├── 04_evaluation_privacy_MIA.ipynb (Includes duplicates evaluation)
-│   └── 05_TSTR_evaluation.ipynb
+│   ├── 04_privacy_evaluation.ipynb (Includes duplicates evaluation)
+│   ├── 05_TSTR_evaluation.ipynb
+│   └── 06_QPU_eval.ipynb
 │
 ├── src/
 │   ├── generators/          # Scripts to train each generative model
@@ -103,6 +104,9 @@ Each part of the pipeline is modularized:
 ### Usability
 05_TSTR_evaluation.py
 
+### QPU Evaluation - Example to illustrate the potential implementation of the framework
+06_QPU_eval.ipynb
+
 ---
 
 ##  Reproducibility Notes
@@ -119,7 +123,7 @@ MIT License
 
 ---
 
-## 🙋‍♀️ Acknowledgements
+##  Acknowledgements
 
 This work is part of the research paper:  
 **A Comprehensive Evaluation Framework for Synthetic
