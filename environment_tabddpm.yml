@@ -1,0 +1,36 @@
+name: tabddpm
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9.7
+  - pandas
+  - numpy
+  - scikit-learn
+  - pip
+  - pip:
+      - torch>=1.10.1
+      - torchvision
+      - torchaudio
+      - transformers
+      - accelerate
+      - diffusers
+      - datasets
+      - evaluate
+      - peft
+      - bitsandbytes
+      - scipy
+      - matplotlib
+      - seaborn
+      - tqdm
+      - wandb
+      - omegaconf
+      - hydra-core
+      - pytorch-lightning
+      - catboost>=1.2.0
+      - xgboost
+      - lightgbm
+      - optuna
+      - mlflow
+      - jupyter
+      - ipykernel
