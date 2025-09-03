@@ -13,6 +13,17 @@ This repository contains code for a comprehensive evaluation of six synthetic da
 - **RTF**
 - **TABDDPM** (Implemented in a separate environment because it depends on an older Python version that is incompatible with the setup used for the other models)
 
+### TabDDPM Integration
+
+TabDDPM (Tabular Diffusion Models) is integrated as a separate module with its own environment configuration. See [TABDDPM_INTEGRATION.md](TABDDPM_INTEGRATION.md) for detailed setup and usage instructions.
+
+**Quick Setup:**
+```bash
+./setup_tabddpm.sh
+conda activate tabddpm
+python examples/tabddpm_example.py
+```
+
 ---
 
 ##  Evaluation Criteria

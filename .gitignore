@@ -1,0 +1,24 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# TabDDPM model and data files
+tabddpm/exp/*/model*.pt
+tabddpm/exp/*/synthetic.csv
+tabddpm/exp/*/X_*.npy
+tabddpm/exp/*/y_*.npy
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
